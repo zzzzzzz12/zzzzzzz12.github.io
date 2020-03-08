@@ -3,6 +3,113 @@
   <entry>
     <title>搭建hexo博客教程</title>
     <url>/2020/03/07/%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>我也是费尽千辛万苦才完成这个blog的搭建啊，中间也踩过很多坑（还重装了个系统），那么本片博客会一步一步教你完成hexo的blog的搭建……同时，我也会带你们一起去跳坑哦！</p>
+<p>参考：<a href="https://blog.csdn.net/gdutxiaoxu/article/details/53576018" target="_blank" rel="noopener">https://blog.csdn.net/gdutxiaoxu/article/details/53576018</a></p>
+<h2 id="搭建环境准备"><a href="#搭建环境准备" class="headerlink" title="搭建环境准备"></a>搭建环境准备</h2><p>差不多就这么点</p>
+<p>Node.js.的安装</p>
+<p>Git的安装</p>
+<p>Github的注册</p>
+<blockquote>
+<p>注意：Node.js版本必须大于8.6，不然会<code>wran</code></p>
+</blockquote>
+<p><img src="C:%5CUsers%5CAdministrator%5CDesktop%5C9fe4afa0gw1faljhotcr1j20dv0atq4u.jpg" alt="9fe4afa0gw1faljhotcr1j20dv0atq4u"></p>
+<p>一路next就行了！</p>
+<p>然后进入cmd输入以下两条命令</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
+
+<p>如果看到![批注 2020-03-08 115259](C:\Users\Administrator\Desktop\批注 2020-03-08 115259.jpg)</p>
+<p>恭喜你node.js安装成功</p>
+<p>node.js中文站<a href="http://nodejs.cn" target="_blank" rel="noopener">http://nodejs.cn</a></p>
+<p>接下来我们要安装Git，建议去360软件助手或者华为镜像站下载git，官网实在是太慢了！</p>
+<p>华为镜像站：<a href="https://mirrors.huaweicloud.com" target="_blank" rel="noopener">https://mirrors.huaweicloud.com</a></p>
+<p>同样一路next就可以了</p>
+<p>检测：<code>git --version</code></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CDesktop%5Cgit4.jpg" alt="git4"></p>
+<p>注册GitHub账号就不必多说了！</p>
+<p>然后创建一个仓库</p>
+<p><img src="C:%5CUsers%5CAdministrator%5CDesktop%5C9fe4afa0gw1faljww56v8j20ci0a975c.jpg" alt="9fe4afa0gw1faljww56v8j20ci0a975c"></p>
+<p>注意：仓库名称一定要用一下格式&lt;你的用户名&gt;.github.io</p>
+<p><img src="C:%5CUsers%5CAdministrator%5CDesktop%5C9fe4afa0gw1faljv7hoqhj20p40fz0vo.jpg" alt="9fe4afa0gw1faljv7hoqhj20p40fz0vo"></p>
+<p>进入仓库，然后点击setting</p>
+<p>![批注 2020-03-08 120513](C:\Users\Administrator\Desktop\批注 2020-03-08 120513.jpg)</p>
+<p>往下翻，你会发现一个GitHub page</p>
+<p>选择主题创建页面</p>
+<p>![批注 2020-03-08 120618](C:\Users\Administrator\Desktop\批注 2020-03-08 120618.jpg)</p>
+<blockquote>
+<p>注意：创建这个页面等待时间很长（我等了3个小时），可以先完成下面步骤再来检验</p>
+</blockquote>
+<h2 id="本地安装hexo"><a href="#本地安装hexo" class="headerlink" title="本地安装hexo"></a>本地安装hexo</h2><p>在一个合适的地方创建一个文件夹，我用E:/hexo作为例子</p>
+<p>进入cmd</p>
+<p>cd到文件夹</p>
+<p>然后输入指令</p>
+<p><code>npm install hexo-cli -g</code></p>
+<p>你会看到（这不是我自己的可能有所差异）</p>
+<p><img src="C:%5CUsers%5CAdministrator%5CDesktop%5C9fe4afa0gw1falkcr5z7kj20ce074aav.jpg" alt="9fe4afa0gw1falkcr5z7kj20ce074aav"></p>
+<p>如果warn没有很多的话（一两个），并且看到update……就说明成功了</p>
+<p>然后输入<code>npm install hexo --save</code></p>
+<p>然后你会看到命令行窗口刷了一大堆白字，下面我们来看一看Hexo是不是已经安装好了。 在命令行中输入：<code>hexo -v</code></p>
+<p>如果看到一堆版本信息就说明成功了！(图片有差异）</p>
+<h2 id="配置hexo"><a href="#配置hexo" class="headerlink" title="配置hexo"></a>配置hexo</h2><p>首先，你要把文件夹里的文件都删除，不然会报错</p>
+<p>接着输入<code>hexo init</code></p>
+<p>然后输入<code>npm install</code></p>
+<p>一切交给npm就行</p>
+<p>接下来，你只要输入<code>hexo g``hexo s</code>就可以了</p>
+<blockquote>
+<p>如果提示INFO Hexo is running at <a href="http://0.0.0.0:4000/" target="_blank" rel="noopener">http://0.0.0.0:4000/</a>. Press Ctrl+C to stop.</p>
+</blockquote>
+<p>在浏览器中打开<a href="http://localhost:4000/，你将会看到：![9fe4afa0gw1falkk5mnsvj211y0lcten](C:\Users\Administrator\Desktop\9fe4afa0gw1falkk5mnsvj211y0lcten.jpg)" target="_blank" rel="noopener">http://localhost:4000/，你将会看到：![9fe4afa0gw1falkk5mnsvj211y0lcten](C:\Users\Administrator\Desktop\9fe4afa0gw1falkk5mnsvj211y0lcten.jpg)</a></p>
+<p>到目前为止，Hexo在本地的配置已经全都结束了。</p>
+<p>下面会讲解怎样将Hexo与github page 联系起来</p>
+<h2 id="关联GitHub-Page"><a href="#关联GitHub-Page" class="headerlink" title="关联GitHub Page"></a>关联GitHub Page</h2><p>大概分为以下几步</p>
+<ul>
+<li>配置git个人信息</li>
+<li>配置Deployment</li>
+</ul>
+<h2 id="1、设置Git的user-name和email：-如果是第一次的话"><a href="#1、设置Git的user-name和email：-如果是第一次的话" class="headerlink" title="1、设置Git的user name和email：(如果是第一次的话)"></a>1、设置Git的user name和email：(如果是第一次的话)</h2><p>进入 Git bash(右键）</p>
+<blockquote>
+<p><code>这里的“xujun&quot; 可以替换成自己的用户名</code></p>
+<p><code>git config --global user.name &quot;xujun&quot;</code></p>
+<p><code>这里的邮箱 gdutxiaoxu@163.com  替换成自己的邮箱</code></p>
+<p><code>git config --global user.email  &quot;gdutxiaoxu@163.com&quot;</code></p>
+</blockquote>
+<p>参考配置</p>
+<p>然后同样右键进入Git GUI</p>
+<p>点击最上方的help，再点击show SSH key</p>
+<p>![批注 2020-03-08 122326](C:\Users\Administrator\Desktop\批注 2020-03-08 122326.jpg)</p>
+<p>创建SSH key</p>
+<p>再输入<code>eval &quot;$(ssh-agent -s)&quot;</code></p>
+<p>最后输入<code>ssh-add ~/.ssh/id_rsa</code></p>
+<p>进入github点击自己头像</p>
+<p>找到setting进入，再进入SSH key</p>
+<p>![批注 2020-03-08 122618](C:\Users\Administrator\Desktop\批注 2020-03-08 122618.jpg)</p>
+<p>用记事本打开id_rsa.pub（找到他，在用户文件的.ssh里）</p>
+<p>复制粘贴到GitHub</p>
+<p>测试：<code>ssh -T git@github.com</code></p>
+<blockquote>
+<p>你将会看到Hi humingx! You’ve successfully authenticated, but GitHub does not provide shell access.</p>
+</blockquote>
+<p>OK，成功！</p>
+<h2 id="配置yml"><a href="#配置yml" class="headerlink" title="配置yml"></a>配置yml</h2><p>在根目录下找到yml文件</p>
+<p>找到#Deployment</p>
+<p>按照如下修改</p>
+<blockquote>
+<p><code>deploy:</code></p>
+<p>  <code>type: git</code> </p>
+<p> <code>repo: git@github.com:yourname/yourname.github.io.git</code>  </p>
+<p><code>branch: master</code></p>
+</blockquote>
+<p>新建一篇博客，执行下面的命令：</p>
+<p><code>hexo new post &quot;article title&quot;</code></p>
+<p><code>hexo d -g #部署到github</code></p>
+<p>踩坑提醒</p>
+<p>1）注意需要提前安装一个扩展：<br><code>npm install hexo-deployer-git --save</code><br>1<br>如果没有执行者行命令，将会提醒</p>
+<blockquote>
+<p>deloyer not found:git</p>
+</blockquote>
+<blockquote>
+<p>2）如果出现下面这样的错误，<br>Permission denied (publickey).<br>fatal: Could not read from remote repository.<br>Please make sure you have the correct access rights<br>and the repository exists.</p>
+</blockquote>
+<p>则是因为没有设置好public key所致。</p>
+<h1 id="结束"><a href="#结束" class="headerlink" title="结束"></a>结束</h1>]]></content>
   </entry>
 </search>
