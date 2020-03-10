@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>苏菲的世界</title>
   
-  <subtitle>你好世界</subtitle>
+  <subtitle>Hello,World</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
