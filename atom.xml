@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-03-10T07:44:55.811Z</updated>
+  <updated>2020-03-11T05:07:57.807Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>原子结构进阶</title>
+    <link href="http://yoursite.com/2020/03/11/%E5%8E%9F%E5%AD%90%E7%BB%93%E6%9E%84%E8%BF%9B%E9%98%B6/"/>
+    <id>http://yoursite.com/2020/03/11/%E5%8E%9F%E5%AD%90%E7%BB%93%E6%9E%84%E8%BF%9B%E9%98%B6/</id>
+    <published>2020-03-11T04:26:49.000Z</published>
+    <updated>2020-03-11T05:07:57.807Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="💴前言"><a href="#💴前言" class="headerlink" title="💴前言"></a>💴前言</h2><p>这是电子排布与原子结构图的续集，（我为啥要写续集？？）</p><h2 id="😊基础知识"><a href="#😊基础知识" class="headerlink" title="😊基础知识"></a>😊基础知识</h2><p>就这张图</p><p><a href="https://imgchr.com/i/8k2vp6" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/11/8k2vp6.png" alt="8k2vp6.png"></a></p><p>多美丽！</p><h2 id="🙃进阶规律"><a href="#🙃进阶规律" class="headerlink" title="🙃进阶规律"></a>🙃进阶规律</h2><p>一般来说，金属最外层电子数&lt;4,非金属最外层电子&gt;=4！</p><blockquote><p>注意：这里排除H，He两种元素</p></blockquote><h3 id="原子核对核外电子吸引的因素"><a href="#原子核对核外电子吸引的因素" class="headerlink" title="原子核对核外电子吸引的因素"></a>原子核对核外电子吸引的因素</h3><p>质子数的多与少</p><p>​              <strong><em>在同一层，质子数越多，吸引就越强</em></strong></p><p>打个比方：Be吸引能力就比Li强，因为Be有4个质子但Li只有三个</p><p>那么质子数越多，吸引力越强吗？</p><p>emmmmmm</p><p>只是在同一层是这样的，在不同层比较</p><p>​                 <strong><em>电子层数越少，吸引力越强</em></strong></p><p>打个比方：Cl虽然有17个质子，但他的层数比Li多一层，所以他比Li弱！</p><h2 id="👱‍♀️相对原子质量"><a href="#👱‍♀️相对原子质量" class="headerlink" title="👱‍♀️相对原子质量"></a>👱‍♀️相对原子质量</h2><p><img src="https://s2.ax1x.com/2020/03/11/8kW1qe.jpg" alt="8kW1qe.jpg"></p><p>简单来说</p><p>​              相对原子质量≈质子数+中子数</p><h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>继续水文章</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;💴前言&quot;&gt;&lt;a href=&quot;#💴前言&quot; class=&quot;headerlink&quot; title=&quot;💴前言&quot;&gt;&lt;/a&gt;💴前言&lt;/h2&gt;&lt;p&gt;这是电子排布与原子结构图的续集，（我为啥要写续集？？）&lt;/p&gt;
+&lt;h2 id=&quot;😊基础知识&quot;&gt;&lt;a href=&quot;#😊基础
+      
+    
+    </summary>
+    
+    
+      <category term="科学" scheme="http://yoursite.com/categories/%E7%A7%91%E5%AD%A6/"/>
+    
+    
+      <category term="电子与原子" scheme="http://yoursite.com/tags/%E7%94%B5%E5%AD%90%E4%B8%8E%E5%8E%9F%E5%AD%90/"/>
+    
+  </entry>
   
   <entry>
     <title>电子排布与原子结构图</title>
