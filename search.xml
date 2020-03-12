@@ -1,6 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>wenyan-lang编程语言</title>
+    <url>/2020/03/12/wenyan-lang%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/</url>
+    <content><![CDATA[<h1 id="🐖前言"><a href="#🐖前言" class="headerlink" title="🐖前言"></a>🐖前言</h1><p>我终于发了一篇正经文章了！</p>
+<p>emmmm，今天就来介绍一下github单日star破van♂的一个东西</p>
+<p><strong>wenyan-lang!</strong></p>
+<p>这是一个船新的编程语言，那么我会那他和西佳佳（C++），python与源码编辑器（为啥是他）进行对比</p>
+<p><strong>关键是这门文言文的编程语言，是一位卡内基梅隆大学（CMU）的大四学生开发。利用 NLP 的一些技术，将文言文程序语法转换到 JavaScript 或 Python 运行，并不是简单的将程序中的英文字符换成了中文。</strong></p>
+<p><del>等等，转换到 JavaScript 或 Python 运行，那和源码编辑器有何区别</del></p>
+<p>国内镜像<a href="https://gitee.com/mirrors/wenyan-lang" target="_blank" rel="noopener">https://gitee.com/mirrors/wenyan-lang</a></p>
+<p>居然还有在线IDE<a href="https://ide.wy-lang.org" target="_blank" rel="noopener">https://ide.wy-lang.org</a></p>
+<h1 id="基础语法对比"><a href="#基础语法对比" class="headerlink" title="基础语法对比"></a>基础语法对比</h1><h2 id="1-变量"><a href="#1-变量" class="headerlink" title="1.变量"></a>1.变量</h2><p>文言</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">吾有一數。曰三。名之曰「甲」。</span><br></pre></td></tr></table></figure>
+
+<p>JavaScript</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var a &#x3D; 3;</span><br></pre></td></tr></table></figure>
+
+<p>Python</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = <span class="number">3</span></span><br></pre></td></tr></table></figure>
+
+<p>C++</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> a = <span class="number">3</span>；</span><br></pre></td></tr></table></figure>
+
+<p>源码编辑器………</p>
+<p>算了算了源码编辑器不比了,fanzao</p>
+<h2 id="2-流程控制（if为例）"><a href="#2-流程控制（if为例）" class="headerlink" title="2.流程控制（if为例）"></a>2.流程控制（if为例）</h2><p>文言</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">若三大於二者。乃得「「想當然耳」」也。</span><br></pre></td></tr></table></figure>
+
+<p>JavaScript</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> (<span class="number">3</span>&gt;<span class="number">2</span>)&#123; <span class="keyword">return</span> <span class="string">"of course"</span>; &#125;</span><br></pre></td></tr></table></figure>
+
+<p>源码编辑器</p>
+<p><a href="https://www.picb.cc/image/kauCHT" target="_blank" rel="noopener"><img src="https://t1.picb.cc/uploads/2020/03/12/kauCHT.jpg" alt="kauCHT.jpg"></a></p>
+<p>Python</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> (<span class="number">3</span> &gt; <span class="number">2</span>) :</span><br><span class="line">    <span class="keyword">return</span> <span class="string">'“of course”'</span></span><br></pre></td></tr></table></figure>
+
+<p>C++</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(<span class="number">3</span>&gt;<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line">   <span class="keyword">return</span> of-course;</span><br></pre></td></tr></table></figure>
+
+<p>这里有错，大家知道就好了</p>
+<h2 id="3-运算"><a href="#3-运算" class="headerlink" title="3.运算"></a>3.运算</h2><p>文言</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">加一以二。</span><br></pre></td></tr></table></figure>
+
+<p>JavaScript</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="number">1</span>+<span class="number">2</span></span><br></pre></td></tr></table></figure>
+
+<p>源码编辑器</p>
+<p><a href="https://www.picb.cc/image/kauOka" target="_blank" rel="noopener"><img src="https://t1.picb.cc/uploads/2020/03/12/kauOka.jpg" alt="kauOka.jpg"></a></p>
+<p>Python</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="number">1</span>+<span class="number">2</span></span><br></pre></td></tr></table></figure>
+
+<p>C++</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1+2；</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-数组"><a href="#4-数组" class="headerlink" title="4.数组"></a>4.数组</h2><p>文言</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">夫「甲」之一。</span><br></pre></td></tr></table></figure>
+
+<p>JavaScript</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">a[<span class="number">0</span>]</span><br></pre></td></tr></table></figure>
+
+<p>源码编辑器</p>
+<p>这东西有数组吗？？？</p>
+<p>Python</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a[<span class="number">0</span>]</span><br></pre></td></tr></table></figure>
+
+<p>C++</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">a[<span class="number">0</span>]</span><br></pre></td></tr></table></figure>
+
+<p>好像都差不多。</p>
+<h2 id="5-函数"><a href="#5-函数" class="headerlink" title="5.函数"></a>5.函数</h2><p>文言</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">吾有一術。名之曰「吸星大法」。是術曰。⋯⋯是謂「吸星大法」之術也。</span><br></pre></td></tr></table></figure>
+
+<p>JavaScript</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>)</span>&#123;...&#125;</span><br></pre></td></tr></table></figure>
+
+<p>源码编辑器</p>
+<p><a href="https://www.picb.cc/image/kauWru" target="_blank" rel="noopener"><img src="https://t1.picb.cc/uploads/2020/03/12/kauWru.jpg" alt="kauWru.jpg"></a></p>
+<p>Python</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">f</span><span class="params">()</span>:</span></span><br></pre></td></tr></table></figure>
+
+<p>C++</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">a</span><span class="params">(<span class="keyword">int</span> b)</span></span>&#123;.....&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p>看上去wenyan-lang效率不是很高，找一个字也要找半天。。。。。</p>
+<p>有意见欢迎评论区回复！！</p>
+<h1 id="斐氏列"><a href="#斐氏列" class="headerlink" title="斐氏列"></a>斐氏列</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">吾有一術。名之曰「斐波那契」。欲行是術。必先得一數。曰「甲」。乃行是術曰。</span><br><span class="line">	若「甲」等於零者乃得零也</span><br><span class="line">	若「甲」等於一者乃得一也</span><br><span class="line">	減「甲」以一。減「甲」以二。名之曰「乙」。曰「丙」。</span><br><span class="line">	施「斐波那契」於「乙」。名之曰「丁」。</span><br><span class="line">	施「斐波那契」於「丙」。名之曰「戊」。</span><br><span class="line">	加「丁」以「戊」。名之曰「己」。</span><br><span class="line">	乃得「己」。</span><br><span class="line">是謂「斐波那契」之術也。</span><br><span class="line"></span><br><span class="line">施「斐波那契」於十二。書之。</span><br></pre></td></tr></table></figure>
+
+<p>out</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">一百四十四</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>语言</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>原子结构进阶</title>
     <url>/2020/03/11/%E5%8E%9F%E5%AD%90%E7%BB%93%E6%9E%84%E8%BF%9B%E9%98%B6/</url>
     <content><![CDATA[<h2 id="💴前言"><a href="#💴前言" class="headerlink" title="💴前言"></a>💴前言</h2><p>这是电子排布与原子结构图的续集，（我为啥要写续集？？）</p>
