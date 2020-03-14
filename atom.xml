@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-03-12T04:50:57.315Z</updated>
+  <updated>2020-03-14T06:39:07.594Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>原子间的相爱相杀-共有电子对</title>
+    <link href="http://yoursite.com/2020/03/14/%E5%8E%9F%E5%AD%90%E9%97%B4%E7%9A%84%E7%9B%B8%E7%88%B1%E7%9B%B8%E6%9D%80-%E5%85%B1%E6%9C%89%E7%94%B5%E5%AD%90%E5%AF%B9/"/>
+    <id>http://yoursite.com/2020/03/14/%E5%8E%9F%E5%AD%90%E9%97%B4%E7%9A%84%E7%9B%B8%E7%88%B1%E7%9B%B8%E6%9D%80-%E5%85%B1%E6%9C%89%E7%94%B5%E5%AD%90%E5%AF%B9/</id>
+    <published>2020-03-14T06:28:36.000Z</published>
+    <updated>2020-03-14T06:39:07.594Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="共有电子对"><a href="#共有电子对" class="headerlink" title="共有电子对"></a>共有电子对</h2><p>存在共有电子对的物质，打个比方H2O–水，HCl–盐酸等等</p><p><strong>那么，共有电子对的微观世界是咋样的？？？</strong></p><p>有图有真相（以HCL为例子）</p><p><img src="https://t1.picb.cc/uploads/2020/03/14/kasx71.jpg" alt="kasx71.jpg"></p><p>这两个原子抢夺电子能力不分上下，所以他们约定每个人拿出一个电子，大家一起用，那么这样H就呈现+1价，Cl呈现-1价，但是，他们并没有失去电子，所以这个不是离子化合物……..</p><h2 id="偏向于"><a href="#偏向于" class="headerlink" title="偏向于"></a>偏向于</h2><p>Cl发现了一个严重的问题，我有17个正电荷，我应该比他强，他就和H说，“我人多，这个电子应该到我这一点”</p><p>这样，就叫做共有电子对偏向于Cl</p><p>这种物质叫做共价化合物</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;共有电子对&quot;&gt;&lt;a href=&quot;#共有电子对&quot; class=&quot;headerlink&quot; title=&quot;共有电子对&quot;&gt;&lt;/a&gt;共有电子对&lt;/h2&gt;&lt;p&gt;存在共有电子对的物质，打个比方H2O–水，HCl–盐酸等等&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;那么，共有电子对的微观世界
+      
+    
+    </summary>
+    
+    
+      <category term="科学" scheme="http://yoursite.com/categories/%E7%A7%91%E5%AD%A6/"/>
+    
+    
+      <category term="电子与原子" scheme="http://yoursite.com/tags/%E7%94%B5%E5%AD%90%E4%B8%8E%E5%8E%9F%E5%AD%90/"/>
+    
+  </entry>
   
   <entry>
     <title>wenyan-lang编程语言</title>
