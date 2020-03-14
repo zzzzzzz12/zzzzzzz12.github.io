@@ -1,276 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title>wenyan-lang编程语言</title>
-    <url>/2020/03/12/wenyan-lang%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/</url>
-    <content><![CDATA[<h1 id="🐖前言"><a href="#🐖前言" class="headerlink" title="🐖前言"></a>🐖前言</h1><p>我终于发了一篇正经文章了！</p>
-<p>emmmm，今天就来介绍一下github单日star破van♂的一个东西</p>
-<p><strong>wenyan-lang!</strong></p>
-<p>这是一个船新的编程语言，那么我会那他和西佳佳（C++），python与源码编辑器（为啥是他）进行对比</p>
-<p><strong>关键是这门文言文的编程语言，是一位卡内基梅隆大学（CMU）的大四学生开发。利用 NLP 的一些技术，将文言文程序语法转换到 JavaScript 或 Python 运行，并不是简单的将程序中的英文字符换成了中文。</strong></p>
-<p><del>等等，转换到 JavaScript 或 Python 运行，那和源码编辑器有何区别</del></p>
-<p>国内镜像<a href="https://gitee.com/mirrors/wenyan-lang" target="_blank" rel="noopener">https://gitee.com/mirrors/wenyan-lang</a></p>
-<p>居然还有在线IDE<a href="https://ide.wy-lang.org" target="_blank" rel="noopener">https://ide.wy-lang.org</a></p>
-<h1 id="基础语法对比"><a href="#基础语法对比" class="headerlink" title="基础语法对比"></a>基础语法对比</h1><h2 id="1-变量"><a href="#1-变量" class="headerlink" title="1.变量"></a>1.变量</h2><p>文言</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">吾有一數。曰三。名之曰「甲」。</span><br></pre></td></tr></table></figure>
-
-<p>JavaScript</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var a &#x3D; 3;</span><br></pre></td></tr></table></figure>
-
-<p>Python</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = <span class="number">3</span></span><br></pre></td></tr></table></figure>
-
-<p>C++</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> a = <span class="number">3</span>；</span><br></pre></td></tr></table></figure>
-
-<p>源码编辑器………</p>
-<p>算了算了源码编辑器不比了,fanzao</p>
-<h2 id="2-流程控制（if为例）"><a href="#2-流程控制（if为例）" class="headerlink" title="2.流程控制（if为例）"></a>2.流程控制（if为例）</h2><p>文言</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">若三大於二者。乃得「「想當然耳」」也。</span><br></pre></td></tr></table></figure>
-
-<p>JavaScript</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> (<span class="number">3</span>&gt;<span class="number">2</span>)&#123; <span class="keyword">return</span> <span class="string">"of course"</span>; &#125;</span><br></pre></td></tr></table></figure>
-
-<p>源码编辑器</p>
-<p><a href="https://www.picb.cc/image/kauCHT" target="_blank" rel="noopener"><img src="https://t1.picb.cc/uploads/2020/03/12/kauCHT.jpg" alt="kauCHT.jpg"></a></p>
-<p>Python</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> (<span class="number">3</span> &gt; <span class="number">2</span>) :</span><br><span class="line">    <span class="keyword">return</span> <span class="string">'“of course”'</span></span><br></pre></td></tr></table></figure>
-
-<p>C++</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(<span class="number">3</span>&gt;<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line">   <span class="keyword">return</span> of-course;</span><br></pre></td></tr></table></figure>
-
-<p>这里有错，大家知道就好了</p>
-<h2 id="3-运算"><a href="#3-运算" class="headerlink" title="3.运算"></a>3.运算</h2><p>文言</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">加一以二。</span><br></pre></td></tr></table></figure>
-
-<p>JavaScript</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="number">1</span>+<span class="number">2</span></span><br></pre></td></tr></table></figure>
-
-<p>源码编辑器</p>
-<p><a href="https://www.picb.cc/image/kauOka" target="_blank" rel="noopener"><img src="https://t1.picb.cc/uploads/2020/03/12/kauOka.jpg" alt="kauOka.jpg"></a></p>
-<p>Python</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="number">1</span>+<span class="number">2</span></span><br></pre></td></tr></table></figure>
-
-<p>C++</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1+2；</span><br></pre></td></tr></table></figure>
-
-<h2 id="4-数组"><a href="#4-数组" class="headerlink" title="4.数组"></a>4.数组</h2><p>文言</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">夫「甲」之一。</span><br></pre></td></tr></table></figure>
-
-<p>JavaScript</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">a[<span class="number">0</span>]</span><br></pre></td></tr></table></figure>
-
-<p>源码编辑器</p>
-<p>这东西有数组吗？？？</p>
-<p>Python</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a[<span class="number">0</span>]</span><br></pre></td></tr></table></figure>
-
-<p>C++</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">a[<span class="number">0</span>]</span><br></pre></td></tr></table></figure>
-
-<p>好像都差不多。</p>
-<h2 id="5-函数"><a href="#5-函数" class="headerlink" title="5.函数"></a>5.函数</h2><p>文言</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">吾有一術。名之曰「吸星大法」。是術曰。⋯⋯是謂「吸星大法」之術也。</span><br></pre></td></tr></table></figure>
-
-<p>JavaScript</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>)</span>&#123;...&#125;</span><br></pre></td></tr></table></figure>
-
-<p>源码编辑器</p>
-<p><a href="https://www.picb.cc/image/kauWru" target="_blank" rel="noopener"><img src="https://t1.picb.cc/uploads/2020/03/12/kauWru.jpg" alt="kauWru.jpg"></a></p>
-<p>Python</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">f</span><span class="params">()</span>:</span></span><br></pre></td></tr></table></figure>
-
-<p>C++</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">a</span><span class="params">(<span class="keyword">int</span> b)</span></span>&#123;.....&#125;</span><br></pre></td></tr></table></figure>
-
-<h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p>看上去wenyan-lang效率不是很高，找一个字也要找半天。。。。。</p>
-<p>有意见欢迎评论区回复！！</p>
-<h1 id="斐氏列"><a href="#斐氏列" class="headerlink" title="斐氏列"></a>斐氏列</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">吾有一術。名之曰「斐波那契」。欲行是術。必先得一數。曰「甲」。乃行是術曰。</span><br><span class="line">	若「甲」等於零者乃得零也</span><br><span class="line">	若「甲」等於一者乃得一也</span><br><span class="line">	減「甲」以一。減「甲」以二。名之曰「乙」。曰「丙」。</span><br><span class="line">	施「斐波那契」於「乙」。名之曰「丁」。</span><br><span class="line">	施「斐波那契」於「丙」。名之曰「戊」。</span><br><span class="line">	加「丁」以「戊」。名之曰「己」。</span><br><span class="line">	乃得「己」。</span><br><span class="line">是謂「斐波那契」之術也。</span><br><span class="line"></span><br><span class="line">施「斐波那契」於十二。書之。</span><br></pre></td></tr></table></figure>
-
-<p>out</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">一百四十四</span><br></pre></td></tr></table></figure>
-
-]]></content>
+<search> 
+  
+  
+    
+    <entry>
+      <title>wenyan-lang编程语言</title>
+      <link href="/2020/03/12/wenyan-lang%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+      <url>/2020/03/12/wenyan-lang%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/</url>
+      
+        <content type="html"><![CDATA[<h1 id="🐖前言"><a href="#🐖前言" class="headerlink" title="🐖前言"></a>🐖前言</h1><p>我终于发了一篇正经文章了！</p><p>emmmm，今天就来介绍一下github单日star破van♂的一个东西</p><p><strong>wenyan-lang!</strong></p><p>这是一个船新的编程语言，那么我会那他和西佳佳（C++），python与源码编辑器（为啥是他）进行对比</p><p><strong>关键是这门文言文的编程语言，是一位卡内基梅隆大学（CMU）的大四学生开发。利用 NLP 的一些技术，将文言文程序语法转换到 JavaScript 或 Python 运行，并不是简单的将程序中的英文字符换成了中文。</strong></p><p><del>等等，转换到 JavaScript 或 Python 运行，那和源码编辑器有何区别</del></p><p>国内镜像<a href="https://gitee.com/mirrors/wenyan-lang" target="_blank" rel="noopener">https://gitee.com/mirrors/wenyan-lang</a></p><p>居然还有在线IDE<a href="https://ide.wy-lang.org" target="_blank" rel="noopener">https://ide.wy-lang.org</a></p><h1 id="基础语法对比"><a href="#基础语法对比" class="headerlink" title="基础语法对比"></a>基础语法对比</h1><h2 id="1-变量"><a href="#1-变量" class="headerlink" title="1.变量"></a>1.变量</h2><p>文言</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">吾有一數。曰三。名之曰「甲」。</span><br></pre></td></tr></table></figure><p>JavaScript</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var a &#x3D; 3;</span><br></pre></td></tr></table></figure><p>Python</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a = <span class="number">3</span></span><br></pre></td></tr></table></figure><p>C++</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> a = <span class="number">3</span>；</span><br></pre></td></tr></table></figure><p>源码编辑器………</p><p>算了算了源码编辑器不比了,fanzao</p><h2 id="2-流程控制（if为例）"><a href="#2-流程控制（if为例）" class="headerlink" title="2.流程控制（if为例）"></a>2.流程控制（if为例）</h2><p>文言</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">若三大於二者。乃得「「想當然耳」」也。</span><br></pre></td></tr></table></figure><p>JavaScript</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (<span class="number">3</span>&gt;<span class="number">2</span>)&#123; <span class="keyword">return</span> <span class="string">"of course"</span>; &#125;</span><br></pre></td></tr></table></figure><p>源码编辑器</p><p><a href="https://www.picb.cc/image/kauCHT" target="_blank" rel="noopener"><img src="https://t1.picb.cc/uploads/2020/03/12/kauCHT.jpg" alt="kauCHT.jpg"></a></p><p>Python</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (<span class="number">3</span> &gt; <span class="number">2</span>) :</span><br><span class="line">    <span class="keyword">return</span> <span class="string">'“of course”'</span></span><br></pre></td></tr></table></figure><p>C++</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(<span class="number">3</span>&gt;<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line">   <span class="keyword">return</span> of-course;</span><br></pre></td></tr></table></figure><p>这里有错，大家知道就好了</p><h2 id="3-运算"><a href="#3-运算" class="headerlink" title="3.运算"></a>3.运算</h2><p>文言</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">加一以二。</span><br></pre></td></tr></table></figure><p>JavaScript</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span>+<span class="number">2</span></span><br></pre></td></tr></table></figure><p>源码编辑器</p><p><a href="https://www.picb.cc/image/kauOka" target="_blank" rel="noopener"><img src="https://t1.picb.cc/uploads/2020/03/12/kauOka.jpg" alt="kauOka.jpg"></a></p><p>Python</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span>+<span class="number">2</span></span><br></pre></td></tr></table></figure><p>C++</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1+2；</span><br></pre></td></tr></table></figure><h2 id="4-数组"><a href="#4-数组" class="headerlink" title="4.数组"></a>4.数组</h2><p>文言</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">夫「甲」之一。</span><br></pre></td></tr></table></figure><p>JavaScript</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a[<span class="number">0</span>]</span><br></pre></td></tr></table></figure><p>源码编辑器</p><p>这东西有数组吗？？？</p><p>Python</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a[<span class="number">0</span>]</span><br></pre></td></tr></table></figure><p>C++</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a[<span class="number">0</span>]</span><br></pre></td></tr></table></figure><p>好像都差不多。</p><h2 id="5-函数"><a href="#5-函数" class="headerlink" title="5.函数"></a>5.函数</h2><p>文言</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">吾有一術。名之曰「吸星大法」。是術曰。⋯⋯是謂「吸星大法」之術也。</span><br></pre></td></tr></table></figure><p>JavaScript</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>)</span>&#123;...&#125;</span><br></pre></td></tr></table></figure><p>源码编辑器</p><p><a href="https://www.picb.cc/image/kauWru" target="_blank" rel="noopener"><img src="https://t1.picb.cc/uploads/2020/03/12/kauWru.jpg" alt="kauWru.jpg"></a></p><p>Python</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">f</span><span class="params">()</span>:</span></span><br></pre></td></tr></table></figure><p>C++</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">a</span><span class="params">(<span class="keyword">int</span> b)</span></span>&#123;.....&#125;</span><br></pre></td></tr></table></figure><h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p>看上去wenyan-lang效率不是很高，找一个字也要找半天。。。。。</p><p>有意见欢迎评论区回复！！</p><h1 id="斐氏列"><a href="#斐氏列" class="headerlink" title="斐氏列"></a>斐氏列</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">吾有一術。名之曰「斐波那契」。欲行是術。必先得一數。曰「甲」。乃行是術曰。</span><br><span class="line">若「甲」等於零者乃得零也</span><br><span class="line">若「甲」等於一者乃得一也</span><br><span class="line">減「甲」以一。減「甲」以二。名之曰「乙」。曰「丙」。</span><br><span class="line">施「斐波那契」於「乙」。名之曰「丁」。</span><br><span class="line">施「斐波那契」於「丙」。名之曰「戊」。</span><br><span class="line">加「丁」以「戊」。名之曰「己」。</span><br><span class="line">乃得「己」。</span><br><span class="line">是謂「斐波那契」之術也。</span><br><span class="line"></span><br><span class="line">施「斐波那契」於十二。書之。</span><br></pre></td></tr></table></figure><p>out</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">一百四十四</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
       <categories>
-        <category>语言</category>
+          
+          <category> 语言 </category>
+          
       </categories>
-      <tags>
-        <tag>语言</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>原子结构进阶</title>
-    <url>/2020/03/11/%E5%8E%9F%E5%AD%90%E7%BB%93%E6%9E%84%E8%BF%9B%E9%98%B6/</url>
-    <content><![CDATA[<h2 id="💴前言"><a href="#💴前言" class="headerlink" title="💴前言"></a>💴前言</h2><p>这是电子排布与原子结构图的续集，（我为啥要写续集？？）</p>
-<h2 id="😊基础知识"><a href="#😊基础知识" class="headerlink" title="😊基础知识"></a>😊基础知识</h2><p>就这张图</p>
-<p><a href="https://imgchr.com/i/8k2vp6" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/11/8k2vp6.png" alt="8k2vp6.png"></a></p>
-<p>多美丽！</p>
-<h2 id="🙃进阶规律"><a href="#🙃进阶规律" class="headerlink" title="🙃进阶规律"></a>🙃进阶规律</h2><p>一般来说，金属最外层电子数&lt;4,非金属最外层电子&gt;=4！</p>
-<blockquote>
-<p>注意：这里排除H，He两种元素</p>
-</blockquote>
-<h3 id="原子核对核外电子吸引的因素"><a href="#原子核对核外电子吸引的因素" class="headerlink" title="原子核对核外电子吸引的因素"></a>原子核对核外电子吸引的因素</h3><p>质子数的多与少</p>
-<p>​              <strong><em>在同一层，质子数越多，吸引就越强</em></strong></p>
-<p>打个比方：Be吸引能力就比Li强，因为Be有4个质子但Li只有三个</p>
-<p>那么质子数越多，吸引力越强吗？</p>
-<p>emmmmmm</p>
-<p>只是在同一层是这样的，在不同层比较</p>
-<p>​                 <strong><em>电子层数越少，吸引力越强</em></strong></p>
-<p>打个比方：Cl虽然有17个质子，但他的层数比Li多一层，所以他比Li弱！</p>
-<h2 id="👱‍♀️相对原子质量"><a href="#👱‍♀️相对原子质量" class="headerlink" title="👱‍♀️相对原子质量"></a>👱‍♀️相对原子质量</h2><p><img src="https://s2.ax1x.com/2020/03/11/8kW1qe.jpg" alt="8kW1qe.jpg"></p>
-<p>简单来说</p>
-<p>​              相对原子质量≈质子数+中子数</p>
-<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>继续水文章</p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> 语言 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>原子结构进阶</title>
+      <link href="/2020/03/11/%E5%8E%9F%E5%AD%90%E7%BB%93%E6%9E%84%E8%BF%9B%E9%98%B6/"/>
+      <url>/2020/03/11/%E5%8E%9F%E5%AD%90%E7%BB%93%E6%9E%84%E8%BF%9B%E9%98%B6/</url>
+      
+        <content type="html"><![CDATA[<h2 id="💴前言"><a href="#💴前言" class="headerlink" title="💴前言"></a>💴前言</h2><p>这是电子排布与原子结构图的续集，（我为啥要写续集？？）</p><h2 id="😊基础知识"><a href="#😊基础知识" class="headerlink" title="😊基础知识"></a>😊基础知识</h2><p>就这张图</p><p><a href="https://imgchr.com/i/8k2vp6" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/11/8k2vp6.png" alt="8k2vp6.png"></a></p><p>多美丽！</p><h2 id="🙃进阶规律"><a href="#🙃进阶规律" class="headerlink" title="🙃进阶规律"></a>🙃进阶规律</h2><p>一般来说，金属最外层电子数&lt;4,非金属最外层电子&gt;=4！</p><blockquote><p>注意：这里排除H，He两种元素</p></blockquote><h3 id="原子核对核外电子吸引的因素"><a href="#原子核对核外电子吸引的因素" class="headerlink" title="原子核对核外电子吸引的因素"></a>原子核对核外电子吸引的因素</h3><p>质子数的多与少</p><p>​              <strong><em>在同一层，质子数越多，吸引就越强</em></strong></p><p>打个比方：Be吸引能力就比Li强，因为Be有4个质子但Li只有三个</p><p>那么质子数越多，吸引力越强吗？</p><p>emmmmmm</p><p>只是在同一层是这样的，在不同层比较</p><p>​                 <strong><em>电子层数越少，吸引力越强</em></strong></p><p>打个比方：Cl虽然有17个质子，但他的层数比Li多一层，所以他比Li弱！</p><h2 id="👱‍♀️相对原子质量"><a href="#👱‍♀️相对原子质量" class="headerlink" title="👱‍♀️相对原子质量"></a>👱‍♀️相对原子质量</h2><p><img src="https://s2.ax1x.com/2020/03/11/8kW1qe.jpg" alt="8kW1qe.jpg"></p><p>简单来说</p><p>​              相对原子质量≈质子数+中子数</p><h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>继续水文章</p>]]></content>
+      
+      
       <categories>
-        <category>科学</category>
+          
+          <category> 科学 </category>
+          
       </categories>
-      <tags>
-        <tag>电子与原子</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>电子排布与原子结构图</title>
-    <url>/2020/03/10/%E7%94%B5%E5%AD%90%E6%8E%92%E5%B8%83%E4%B8%8E%E5%8E%9F%E5%AD%90%E7%BB%93%E6%9E%84%E5%9B%BE/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><h2 id="🐖前言"><a href="#🐖前言" class="headerlink" title="🐖前言"></a>🐖前言</h2><p>我为啥要写这种文章，我也不知道，感觉还挺有意思的</p>
-<h2 id="🐷基础知识"><a href="#🐷基础知识" class="headerlink" title="🐷基础知识"></a>🐷基础知识</h2><p>呃呃呃呃，那个先来了解一下原子的组成吧</p>
-<p>一个原子是由原子核与核外电子组成的，而一个原子核是由质子（一定存在）和中子存在的，这些都是基础知识，我就放一张图在这<del>（太简单了没意思）</del></p>
-<p><a href="https://www.picb.cc/image/kQP77y" target="_blank" rel="noopener"><img src="https://t1.picb.cc/uploads/2020/03/10/kQP77y.jpg" alt="kQP77y.jpg"></a></p>
-<h2 id="🚌电子排布"><a href="#🚌电子排布" class="headerlink" title="🚌电子排布"></a>🚌电子排布</h2><p>呃呃呃呃，我们都知道电子们并不是在同意轨道上运动的，而是在不同的轨道上的，那么，这些排布有什么规律吗</p>
-<h3 id="规律"><a href="#规律" class="headerlink" title="规律"></a>规律</h3><p>电子排布遵循这三个规律</p>
-<p>1.最内层最多排2个电子，最外层最多排8个电子</p>
-<p>2每层最多排布遵循规律2n^2个</p>
-<p>3.由内向外排布</p>
-<p>那么，有啥用呢，没啥用</p>
-<h2 id="⚛原子结构示意图"><a href="#⚛原子结构示意图" class="headerlink" title="⚛原子结构示意图"></a>⚛原子结构示意图</h2><p>归结起来大体有如下几点:</p>
-<p>知道1~20号(编号数即核内质子数)元素的名称、符号和核电荷数(即质子数)。</p>
-<p>理解图中的符号和数字所表示的意义。</p>
-<p>现以磷原子结构示意图为例，具体说明。<a href="https://p1.ssl.qhimg.com/t01389dfa84ccd92b0d.png" target="_blank" rel="noopener"><img src="https://p1.ssl.qhimg.com/dr/220__/t01389dfa84ccd92b0d.png" alt="磷原子结构示意图">磷原子结构示意图</a>“Ο”，表示原子核，圈内”+”号， 表示质子所带电荷的性质;圈内数字”15”，表示核内15个质子;圈外弧线，表示<a href="https://baike.so.com/doc/6030654-6243655.html" target="_blank" rel="noopener">电子层</a>，弧线所夹的数字为该层容纳的电子的数目。磷原子有3条弧线，表示它共有3个电子层。2,8,5表示第一、二、三电子层有2,8,5个电子。(K、L、M、N、O、P、Q由里到外)</p>
-<p>不管是什么原子，核电荷数=质子数=电子数，电量相等，电性相反，整个原子呈电中性(即不显电性)。</p>
-<p>原子结构示意图不仅可以表示<a href="https://baike.so.com/doc/797725-843899.html" target="_blank" rel="noopener">中性原子</a>，还能表示带电的原子-一离子(包括阳离子和阴离子)<a href="https://baike.so.com/doc/6024500-6237497.html" target="_blank" rel="noopener">核外电子排布</a>的情况。原子结构示意图不能区别同一元素的多种<strong>同位素(因其不能表示中子数)</strong></p>
-<h2 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h2><p>啊，水了一篇文章！</p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> 电子与原子 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>电子排布与原子结构图</title>
+      <link href="/2020/03/10/%E7%94%B5%E5%AD%90%E6%8E%92%E5%B8%83%E4%B8%8E%E5%8E%9F%E5%AD%90%E7%BB%93%E6%9E%84%E5%9B%BE/"/>
+      <url>/2020/03/10/%E7%94%B5%E5%AD%90%E6%8E%92%E5%B8%83%E4%B8%8E%E5%8E%9F%E5%AD%90%E7%BB%93%E6%9E%84%E5%9B%BE/</url>
+      
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><h2 id="🐖前言"><a href="#🐖前言" class="headerlink" title="🐖前言"></a>🐖前言</h2><p>我为啥要写这种文章，我也不知道，感觉还挺有意思的</p><h2 id="🐷基础知识"><a href="#🐷基础知识" class="headerlink" title="🐷基础知识"></a>🐷基础知识</h2><p>呃呃呃呃，那个先来了解一下原子的组成吧</p><p>一个原子是由原子核与核外电子组成的，而一个原子核是由质子（一定存在）和中子存在的，这些都是基础知识，我就放一张图在这<del>（太简单了没意思）</del></p><p><a href="https://www.picb.cc/image/kQP77y" target="_blank" rel="noopener"><img src="https://t1.picb.cc/uploads/2020/03/10/kQP77y.jpg" alt="kQP77y.jpg"></a></p><h2 id="🚌电子排布"><a href="#🚌电子排布" class="headerlink" title="🚌电子排布"></a>🚌电子排布</h2><p>呃呃呃呃，我们都知道电子们并不是在同意轨道上运动的，而是在不同的轨道上的，那么，这些排布有什么规律吗</p><h3 id="规律"><a href="#规律" class="headerlink" title="规律"></a>规律</h3><p>电子排布遵循这三个规律</p><p>1.最内层最多排2个电子，最外层最多排8个电子</p><p>2每层最多排布遵循规律2n^2个</p><p>3.由内向外排布</p><p>那么，有啥用呢，没啥用</p><h2 id="⚛原子结构示意图"><a href="#⚛原子结构示意图" class="headerlink" title="⚛原子结构示意图"></a>⚛原子结构示意图</h2><p>归结起来大体有如下几点:</p><p>知道1~20号(编号数即核内质子数)元素的名称、符号和核电荷数(即质子数)。</p><p>理解图中的符号和数字所表示的意义。</p><p>现以磷原子结构示意图为例，具体说明。<a href="https://p1.ssl.qhimg.com/t01389dfa84ccd92b0d.png" target="_blank" rel="noopener"><img src="https://p1.ssl.qhimg.com/dr/220__/t01389dfa84ccd92b0d.png" alt="磷原子结构示意图">磷原子结构示意图</a>“Ο”，表示原子核，圈内”+”号， 表示质子所带电荷的性质;圈内数字”15”，表示核内15个质子;圈外弧线，表示<a href="https://baike.so.com/doc/6030654-6243655.html" target="_blank" rel="noopener">电子层</a>，弧线所夹的数字为该层容纳的电子的数目。磷原子有3条弧线，表示它共有3个电子层。2,8,5表示第一、二、三电子层有2,8,5个电子。(K、L、M、N、O、P、Q由里到外)</p><p>不管是什么原子，核电荷数=质子数=电子数，电量相等，电性相反，整个原子呈电中性(即不显电性)。</p><p>原子结构示意图不仅可以表示<a href="https://baike.so.com/doc/797725-843899.html" target="_blank" rel="noopener">中性原子</a>，还能表示带电的原子-一离子(包括阳离子和阴离子)<a href="https://baike.so.com/doc/6024500-6237497.html" target="_blank" rel="noopener">核外电子排布</a>的情况。原子结构示意图不能区别同一元素的多种<strong>同位素(因其不能表示中子数)</strong></p><h2 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h2><p>啊，水了一篇文章！</p>]]></content>
+      
+      
       <categories>
-        <category>科学</category>
+          
+          <category> 科学 </category>
+          
       </categories>
-      <tags>
-        <tag>电子与原子</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>搭建hexo博客教程</title>
-    <url>/2020/03/07/%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>我也是费尽千辛万苦才完成这个blog的搭建啊，中间也踩过很多坑（还重装了个系统），那么本片博客会一步一步教你完成hexo的blog的搭建……同时，我也会带你们一起去跳坑哦！</p>
-<p>参考：<a href="https://blog.csdn.net/gdutxiaoxu/article/details/53576018" target="_blank" rel="noopener">https://blog.csdn.net/gdutxiaoxu/article/details/53576018</a></p>
-<h2 id="搭建环境准备"><a href="#搭建环境准备" class="headerlink" title="搭建环境准备"></a>搭建环境准备</h2><p>差不多就这么点</p>
-<p>Node.js.的安装</p>
-<p>Git的安装</p>
-<p>Github的注册</p>
-<blockquote>
-<p>注意：Node.js版本必须大于8.6，不然会<code>wran</code></p>
-</blockquote>
-<p>[<img src="https://t1.picb.cc/uploads/2020/03/08/kNTfMi.jpg" alt="kNTfMi.jpg"></p>
-<p>一路next就行了！</p>
-<p>然后进入cmd输入以下两条命令</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
-
-<p>如果看到!<img src="https://t1.picb.cc/uploads/2020/03/08/kNxAeu.jpg" alt="kNxAeu.jpg"></p>
-<p>恭喜你node.js安装成功</p>
-<p>node.js中文站<a href="http://nodejs.cn" target="_blank" rel="noopener">http://nodejs.cn</a></p>
-<p>接下来我们要安装Git，建议去360软件助手或者华为镜像站下载git，官网实在是太慢了！</p>
-<p>华为镜像站：<a href="https://mirrors.huaweicloud.com" target="_blank" rel="noopener">https://mirrors.huaweicloud.com</a></p>
-<p>同样一路next就可以了</p>
-<p>检测：<code>git --version</code></p>
-<p>!<img src="https://t1.picb.cc/uploads/2020/03/08/kNTcvX.jpg" alt="kNTcvX.jpg"></p>
-<p>注册GitHub账号就不必多说了！</p>
-<p>然后创建一个仓库</p>
-<p>!<img src="https://t1.picb.cc/uploads/2020/03/08/kNTMYs.jpg" alt="kNTMYs.jpg"></p>
-<p>注意：仓库名称一定要用一下格式&lt;你的用户名&gt;.github.io</p>
-<p>!<img src="https://t1.picb.cc/uploads/2020/03/08/kNTq36.jpg" alt="kNTq36.jpg"></p>
-<p>进入仓库，然后点击setting</p>
-<p>!<img src="https://t1.picb.cc/uploads/2020/03/08/kNTSud.jpg" alt="kNTSud.jpg"></p>
-<p>往下翻，你会发现一个GitHub page</p>
-<p>选择主题创建页面</p>
-<p>!<img src="https://t1.picb.cc/uploads/2020/03/08/kNTX3a.jpg" alt="kNTX3a.jpg"></p>
-<blockquote>
-<p>注意：创建这个页面等待时间很长（我等了3个小时），可以先完成下面步骤再来检验</p>
-</blockquote>
-<h2 id="本地安装hexo"><a href="#本地安装hexo" class="headerlink" title="本地安装hexo"></a>本地安装hexo</h2><p>在一个合适的地方创建一个文件夹，我用E:/hexo作为例子</p>
-<p>进入cmd</p>
-<p>cd到文件夹</p>
-<p>然后输入指令</p>
-<p><code>npm install hexo-cli -g</code></p>
-<p>你会看到（这不是我自己的可能有所差异）</p>
-<p>!<img src="https://t1.picb.cc/uploads/2020/03/08/kNTsdR.jpg" alt="kNTsdR.jpg"></p>
-<p>如果warn没有很多的话（一两个，好几个就不对了），并且看到update……就说明成功了</p>
-<p>然后输入<code>npm install hexo --save</code></p>
-<p>然后你会看到命令行窗口刷了一大堆白字，下面我们来看一看Hexo是不是已经安装好了。 在命令行中输入：<code>hexo -v</code></p>
-<p>如果看到一堆版本信息就说明成功了！(图片有差异）</p>
-<p><img src="https://t1.picb.cc/uploads/2020/03/08/kN9iWM.jpg" alt="kN9iWM.jpg"></p>
-<h2 id="配置hexo"><a href="#配置hexo" class="headerlink" title="配置hexo"></a>配置hexo</h2><p>首先，你要把文件夹里的文件都删除，不然会报错</p>
-<p>接着输入<code>hexo init</code></p>
-<p>然后输入<code>npm install</code></p>
-<p>一切交给npm就行</p>
-<p>接下来，你只要输入<code>hexo g``hexo s</code>就可以了</p>
-<blockquote>
-<p>如果提示INFO Hexo is running at <a href="http://0.0.0.0:4000/" target="_blank" rel="noopener">http://0.0.0.0:4000/</a>. Press Ctrl+C to stop.</p>
-</blockquote>
-<p>在浏览器中打开<a href="http://localhost:4000/，你将会看到：" target="_blank" rel="noopener">http://localhost:4000/，你将会看到：</a></p>
-<p><img src="https://t1.picb.cc/uploads/2020/03/08/kN9nxt.jpg" alt="kN9nxt.jpg"></p>
-<p>到目前为止，Hexo在本地的配置已经全都结束了。</p>
-<p>下面会讲解怎样将Hexo与github page 联系起来</p>
-<h2 id="关联GitHub-Page"><a href="#关联GitHub-Page" class="headerlink" title="关联GitHub Page"></a>关联GitHub Page</h2><p>大概分为以下几步</p>
-<ul>
-<li>配置git个人信息</li>
-<li>配置Deployment</li>
-</ul>
-<h2 id="1、设置Git的user-name和email：-如果是第一次的话"><a href="#1、设置Git的user-name和email：-如果是第一次的话" class="headerlink" title="1、设置Git的user name和email：(如果是第一次的话)"></a>1、设置Git的user name和email：(如果是第一次的话)</h2><p>进入 Git bash(右键）</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">`这里的“xujun<span class="string">" 可以替换成自己的用户名`</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">`git config --global user.name "</span>xujun<span class="string">"`</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">`这里的邮箱 gdutxiaoxu@163.com  替换成自己的邮箱`</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">`git config --global user.email  "</span>gdutxiaoxu@<span class="number">163.</span>com<span class="string">"`</span></span><br></pre></td></tr></table></figure>
-
-<p>参考上面配置</p>
-<p>然后同样右键进入Git GUI</p>
-<p>点击最上方的help，再点击show SSH key</p>
-<p><img src="https://t1.picb.cc/uploads/2020/03/08/kN95WD.jpg" alt="kN95WD.jpg"></p>
-<p>创建SSH key</p>
-<p>再输入<code>eval &quot;$(ssh-agent -s)&quot;</code></p>
-<p>最后输入<code>ssh-add ~/.ssh/id_rsa</code></p>
-<p>进入github点击自己头像</p>
-<p>找到setting进入，再进入SSH key</p>
-<p>!<img src="https://t1.picb.cc/uploads/2020/03/08/kN9WSW.jpg" alt="kN9WSW.jpg"></p>
-<p>用记事本打开id_rsa.pub（找到他，在用户文件的.ssh里）</p>
-<p>复制粘贴到GitHub</p>
-<p>测试：<code>ssh -T git@github.com</code></p>
-<blockquote>
-<p>你将会看到Hi humingx! You’ve successfully authenticated, but GitHub does not provide shell access.</p>
-</blockquote>
-<p>OK，成功！</p>
-<h2 id="配置yml"><a href="#配置yml" class="headerlink" title="配置yml"></a>配置yml</h2><p>在根目录下找到yml文件</p>
-<p>找到#Deployment</p>
-<p>按照如下修改</p>
-<blockquote>
-<p><code>deploy:</code></p>
-<p>  <code>type: git</code> </p>
-<p> <code>repo: git@github.com:yourname/yourname.github.io.git</code>  </p>
-<p><code>branch: master</code></p>
-</blockquote>
-<p>新建一篇博客，执行下面的命令：</p>
-<p><code>hexo new post &quot;article title&quot;</code></p>
-<p><code>hexo d -g #部署到github</code></p>
-<p>踩坑提醒</p>
-<p>1）注意需要提前安装一个扩展：<br><code>npm install hexo-deployer-git --save</code><br>1<br>如果没有执行者行命令，将会提醒</p>
-<blockquote>
-<p>deloyer not found:git</p>
-</blockquote>
-<blockquote>
-<p>2）如果出现下面这样的错误，<br>Permission denied (publickey).<br>fatal: Could not read from remote repository.<br>Please make sure you have the correct access rights<br>and the repository exists.</p>
-</blockquote>
-<p>则是因为没有设置好public key所致。</p>
-<h1 id="结束"><a href="#结束" class="headerlink" title="结束"></a>结束</h1>]]></content>
+      
+      
+        <tags>
+            
+            <tag> 电子与原子 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>搭建hexo博客教程</title>
+      <link href="/2020/03/07/%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/"/>
+      <url>/2020/03/07/%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/</url>
+      
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>我也是费尽千辛万苦才完成这个blog的搭建啊，中间也踩过很多坑（还重装了个系统），那么本片博客会一步一步教你完成hexo的blog的搭建……同时，我也会带你们一起去跳坑哦！</p><p>参考：<a href="https://blog.csdn.net/gdutxiaoxu/article/details/53576018" target="_blank" rel="noopener">https://blog.csdn.net/gdutxiaoxu/article/details/53576018</a></p><h2 id="搭建环境准备"><a href="#搭建环境准备" class="headerlink" title="搭建环境准备"></a>搭建环境准备</h2><p>差不多就这么点</p><p>Node.js.的安装</p><p>Git的安装</p><p>Github的注册</p><blockquote><p>注意：Node.js版本必须大于8.6，不然会<code>wran</code></p></blockquote><p>[<img src="https://t1.picb.cc/uploads/2020/03/08/kNTfMi.jpg" alt="kNTfMi.jpg"></p><p>一路next就行了！</p><p>然后进入cmd输入以下两条命令</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure><p>如果看到!<img src="https://t1.picb.cc/uploads/2020/03/08/kNxAeu.jpg" alt="kNxAeu.jpg"></p><p>恭喜你node.js安装成功</p><p>node.js中文站<a href="http://nodejs.cn" target="_blank" rel="noopener">http://nodejs.cn</a></p><p>接下来我们要安装Git，建议去360软件助手或者华为镜像站下载git，官网实在是太慢了！</p><p>华为镜像站：<a href="https://mirrors.huaweicloud.com" target="_blank" rel="noopener">https://mirrors.huaweicloud.com</a></p><p>同样一路next就可以了</p><p>检测：<code>git --version</code></p><p>!<img src="https://t1.picb.cc/uploads/2020/03/08/kNTcvX.jpg" alt="kNTcvX.jpg"></p><p>注册GitHub账号就不必多说了！</p><p>然后创建一个仓库</p><p>!<img src="https://t1.picb.cc/uploads/2020/03/08/kNTMYs.jpg" alt="kNTMYs.jpg"></p><p>注意：仓库名称一定要用一下格式&lt;你的用户名&gt;.github.io</p><p>!<img src="https://t1.picb.cc/uploads/2020/03/08/kNTq36.jpg" alt="kNTq36.jpg"></p><p>进入仓库，然后点击setting</p><p>!<img src="https://t1.picb.cc/uploads/2020/03/08/kNTSud.jpg" alt="kNTSud.jpg"></p><p>往下翻，你会发现一个GitHub page</p><p>选择主题创建页面</p><p>!<img src="https://t1.picb.cc/uploads/2020/03/08/kNTX3a.jpg" alt="kNTX3a.jpg"></p><blockquote><p>注意：创建这个页面等待时间很长（我等了3个小时），可以先完成下面步骤再来检验</p></blockquote><h2 id="本地安装hexo"><a href="#本地安装hexo" class="headerlink" title="本地安装hexo"></a>本地安装hexo</h2><p>在一个合适的地方创建一个文件夹，我用E:/hexo作为例子</p><p>进入cmd</p><p>cd到文件夹</p><p>然后输入指令</p><p><code>npm install hexo-cli -g</code></p><p>你会看到（这不是我自己的可能有所差异）</p><p>!<img src="https://t1.picb.cc/uploads/2020/03/08/kNTsdR.jpg" alt="kNTsdR.jpg"></p><p>如果warn没有很多的话（一两个，好几个就不对了），并且看到update……就说明成功了</p><p>然后输入<code>npm install hexo --save</code></p><p>然后你会看到命令行窗口刷了一大堆白字，下面我们来看一看Hexo是不是已经安装好了。 在命令行中输入：<code>hexo -v</code></p><p>如果看到一堆版本信息就说明成功了！(图片有差异）</p><p><img src="https://t1.picb.cc/uploads/2020/03/08/kN9iWM.jpg" alt="kN9iWM.jpg"></p><h2 id="配置hexo"><a href="#配置hexo" class="headerlink" title="配置hexo"></a>配置hexo</h2><p>首先，你要把文件夹里的文件都删除，不然会报错</p><p>接着输入<code>hexo init</code></p><p>然后输入<code>npm install</code></p><p>一切交给npm就行</p><p>接下来，你只要输入<code>hexo g``hexo s</code>就可以了</p><blockquote><p>如果提示INFO Hexo is running at <a href="http://0.0.0.0:4000/" target="_blank" rel="noopener">http://0.0.0.0:4000/</a>. Press Ctrl+C to stop.</p></blockquote><p>在浏览器中打开<a href="http://localhost:4000/，你将会看到：" target="_blank" rel="noopener">http://localhost:4000/，你将会看到：</a></p><p><img src="https://t1.picb.cc/uploads/2020/03/08/kN9nxt.jpg" alt="kN9nxt.jpg"></p><p>到目前为止，Hexo在本地的配置已经全都结束了。</p><p>下面会讲解怎样将Hexo与github page 联系起来</p><h2 id="关联GitHub-Page"><a href="#关联GitHub-Page" class="headerlink" title="关联GitHub Page"></a>关联GitHub Page</h2><p>大概分为以下几步</p><ul><li>配置git个人信息</li><li>配置Deployment</li></ul><h2 id="1、设置Git的user-name和email：-如果是第一次的话"><a href="#1、设置Git的user-name和email：-如果是第一次的话" class="headerlink" title="1、设置Git的user name和email：(如果是第一次的话)"></a>1、设置Git的user name和email：(如果是第一次的话)</h2><p>进入 Git bash(右键）</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">`这里的“xujun<span class="string">" 可以替换成自己的用户名`</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">`git config --global user.name "</span>xujun<span class="string">"`</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">`这里的邮箱 gdutxiaoxu@163.com  替换成自己的邮箱`</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">`git config --global user.email  "</span>gdutxiaoxu@<span class="number">163.</span>com<span class="string">"`</span></span><br></pre></td></tr></table></figure><p>参考上面配置</p><p>然后同样右键进入Git GUI</p><p>点击最上方的help，再点击show SSH key</p><p><img src="https://t1.picb.cc/uploads/2020/03/08/kN95WD.jpg" alt="kN95WD.jpg"></p><p>创建SSH key</p><p>再输入<code>eval &quot;$(ssh-agent -s)&quot;</code></p><p>最后输入<code>ssh-add ~/.ssh/id_rsa</code></p><p>进入github点击自己头像</p><p>找到setting进入，再进入SSH key</p><p>!<img src="https://t1.picb.cc/uploads/2020/03/08/kN9WSW.jpg" alt="kN9WSW.jpg"></p><p>用记事本打开id_rsa.pub（找到他，在用户文件的.ssh里）</p><p>复制粘贴到GitHub</p><p>测试：<code>ssh -T git@github.com</code></p><blockquote><p>你将会看到Hi humingx! You’ve successfully authenticated, but GitHub does not provide shell access.</p></blockquote><p>OK，成功！</p><h2 id="配置yml"><a href="#配置yml" class="headerlink" title="配置yml"></a>配置yml</h2><p>在根目录下找到yml文件</p><p>找到#Deployment</p><p>按照如下修改</p><blockquote><p><code>deploy:</code></p><p>  <code>type: git</code> </p><p> <code>repo: git@github.com:yourname/yourname.github.io.git</code>  </p><p><code>branch: master</code></p></blockquote><p>新建一篇博客，执行下面的命令：</p><p><code>hexo new post &quot;article title&quot;</code></p><p><code>hexo d -g #部署到github</code></p><p>踩坑提醒</p><p>1）注意需要提前安装一个扩展：<br><code>npm install hexo-deployer-git --save</code><br>1<br>如果没有执行者行命令，将会提醒</p><blockquote><p>deloyer not found:git</p></blockquote><blockquote><p>2）如果出现下面这样的错误，<br>Permission denied (publickey).<br>fatal: Could not read from remote repository.<br>Please make sure you have the correct access rights<br>and the repository exists.</p></blockquote><p>则是因为没有设置好public key所致。</p><h1 id="结束"><a href="#结束" class="headerlink" title="结束"></a>结束</h1>]]></content>
+      
+      
       <categories>
-        <category>技术</category>
+          
+          <category> 技术 </category>
+          
       </categories>
-      <tags>
-        <tag>技术</tag>
-      </tags>
-  </entry>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
 </search>
