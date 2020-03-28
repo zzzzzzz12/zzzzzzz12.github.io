@@ -4,6 +4,8 @@
     <title>P1255 数楼梯题解</title>
     <url>/2020/03/27/P1255-%E6%95%B0%E6%A5%BC%E6%A2%AF%E9%A2%98%E8%A7%A3/</url>
     <content><![CDATA[<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>我们发现，每次行走只有两种情况，要么1，要么2，而且只有刚好能凑到n才可以很容易画出树状图</p>
+<a id="more"></a>
+
 <p><a href="https://imgchr.com/i/GPr70e" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/03/27/GPr70e.png" alt="GPr70e.png"></a></p>
 <p>也很容易写出程序</p>
 <figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> n,ans;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">walk</span><span class="params">(<span class="keyword">int</span> a)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(a==n)ans++;</span><br><span class="line">	<span class="keyword">if</span>(a&lt;n)&#123;</span><br><span class="line">		walk(a+<span class="number">1</span>);</span><br><span class="line">		walk(a+<span class="number">2</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="built_in">cin</span>&gt;&gt;n;</span><br><span class="line">	walk(<span class="number">1</span>);</span><br><span class="line">	walk(<span class="number">2</span>);</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;ans&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -38,7 +40,11 @@
     <title>P4924 [1007]魔法少女小Scarlet题解·</title>
     <url>/2020/03/25/P4924-1007-%E9%AD%94%E6%B3%95%E5%B0%91%E5%A5%B3%E5%B0%8FScarlet%E9%A2%98%E8%A7%A3%C2%B7/</url>
     <content><![CDATA[<h2 id="洛谷中"><a href="#洛谷中" class="headerlink" title="洛谷中"></a>洛谷中</h2><p><a href="https://20051101-a.blog.luogu.org/jian-dan-di-mu-ni" target="_blank" rel="noopener">https://20051101-a.blog.luogu.org/jian-dan-di-mu-ni</a></p>
-<h2 id="简单的模拟"><a href="#简单的模拟" class="headerlink" title="简单的模拟"></a>简单的模拟</h2><p>这是我第一次发题解<del>（前几次都没过，一定要过啊）</del><br>月赛T1，还是比较简单的 草稿纸模拟一下就好了（括号内原坐标，黑色为顺势针旋转后坐标，蓝色逆时针，）<br>我是那5阶模拟的，三阶也包括<a href="https://imgchr.com/i/86WeWd" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/03/20/86WeWd.jpg" alt="86WeWd.jpg"></a></p>
+<h2 id="简单的模拟"><a href="#简单的模拟" class="headerlink" title="简单的模拟"></a>简单的模拟</h2><p>这是我第一次发题解<del>（前几次都没过，一定要过啊）</del><br>月赛T1，还是比较简单的 草稿纸模拟一下就好了（括号内原坐标，黑色为顺势针旋转后坐标，蓝色逆时针，）</p>
+<a id="more"></a>
+
+<p>我是那5阶模拟的，三阶也包括</p>
+<p><a href="https://imgchr.com/i/86WeWd" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/03/20/86WeWd.jpg" alt="86WeWd.jpg"></a></p>
 <p>可以得出结论<br>顺时针从每一行开始，横坐标从+0开始 变换4（+）次，每行开始值-1<br>纵坐标从+4开始，变换4次（-）每行开始值-1 所以顺势针程序为</p>
 <figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">cw</span><span class="params">(<span class="keyword">int</span> x1,<span class="keyword">int</span> y1,<span class="keyword">int</span> r1)</span> </span>&#123; </span><br><span class="line">    <span class="keyword">int</span> a=<span class="number">0</span>,b;</span><br><span class="line">    b=<span class="number">2</span>*r1;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=x1-r1;i&lt;=x1+r1;i++)&#123;</span><br><span class="line">        <span class="keyword">int</span> c=a;</span><br><span class="line">        <span class="keyword">int</span> d=b;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j=y1-r1;j&lt;=y1+r1;j++)&#123;</span><br><span class="line">            it[i+c][j+d]=p[i][j];</span><br><span class="line">            ++c;</span><br><span class="line">            --d;</span><br><span class="line">        &#125;</span><br><span class="line">        a--;</span><br><span class="line">        b--;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=x1-r1;i&lt;=x1+r1;i++)&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j=y1-r1;j&lt;=y1+r1;j++)&#123;</span><br><span class="line">            p[i][j]=it[i][j];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -59,6 +65,8 @@
 <p>有图有真相（以HCL为例子）</p>
 <p><img src="https://t1.picb.cc/uploads/2020/03/14/kasx71.jpg" alt="kasx71.jpg"></p>
 <p>这两个原子抢夺电子能力不分上下，所以他们约定每个人拿出一个电子，大家一起用，那么这样H就呈现+1价，Cl呈现-1价，但是，他们并没有失去电子，所以这个不是离子化合物……..</p>
+<a id="more"></a>
+
 <h2 id="偏向于"><a href="#偏向于" class="headerlink" title="偏向于"></a>偏向于</h2><p>Cl发现了一个严重的问题，我有17个正电荷，我应该比他强，他就和H说，“我人多，这个电子应该到我这一点”</p>
 <p>这样，就叫做共有电子对偏向于Cl</p>
 <p>这种物质叫做共价化合物</p>
@@ -77,6 +85,8 @@
 <p>emmmm，今天就来介绍一下github单日star破van♂的一个东西</p>
 <p><strong>wenyan-lang!</strong></p>
 <p>这是一个船新的编程语言，那么我会那他和西佳佳（C++），python与源码编辑器（为啥是他）进行对比</p>
+<a id="more"></a>
+
 <p><strong>关键是这门文言文的编程语言，是一位卡内基梅隆大学（CMU）的大四学生开发。利用 NLP 的一些技术，将文言文程序语法转换到 JavaScript 或 Python 运行，并不是简单的将程序中的英文字符换成了中文。</strong></p>
 <p><del>等等，转换到 JavaScript 或 Python 运行，那和源码编辑器有何区别</del></p>
 <p>国内镜像<a href="https://gitee.com/mirrors/wenyan-lang" target="_blank" rel="noopener">https://gitee.com/mirrors/wenyan-lang</a></p>
@@ -175,6 +185,8 @@
 <h2 id="😊基础知识"><a href="#😊基础知识" class="headerlink" title="😊基础知识"></a>😊基础知识</h2><p>就这张图</p>
 <p><a href="https://imgchr.com/i/8k2vp6" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/11/8k2vp6.png" alt="8k2vp6.png"></a></p>
 <p>多美丽！</p>
+<a id="more"></a>
+
 <h2 id="🙃进阶规律"><a href="#🙃进阶规律" class="headerlink" title="🙃进阶规律"></a>🙃进阶规律</h2><p>一般来说，金属最外层电子数&lt;4,非金属最外层电子&gt;=4！</p>
 <blockquote>
 <p>注意：这里排除H，He两种元素</p>
@@ -205,7 +217,9 @@
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><h2 id="🐖前言"><a href="#🐖前言" class="headerlink" title="🐖前言"></a>🐖前言</h2><p>我为啥要写这种文章，我也不知道，感觉还挺有意思的</p>
 <h2 id="🐷基础知识"><a href="#🐷基础知识" class="headerlink" title="🐷基础知识"></a>🐷基础知识</h2><p>呃呃呃呃，那个先来了解一下原子的组成吧</p>
 <p>一个原子是由原子核与核外电子组成的，而一个原子核是由质子（一定存在）和中子存在的，这些都是基础知识，我就放一张图在这<del>（太简单了没意思）</del></p>
-<p><a href="https://www.picb.cc/image/kQP77y" target="_blank" rel="noopener"><img src="https://t1.picb.cc/uploads/2020/03/10/kQP77y.jpg" alt="kQP77y.jpg"></a></p>
+<p><a href="https://www.picb.cc/image/kQP77y" target="_blank" rel="noopener"><img src="https://t1.picb.cc/uploads/2020/03/10/kQP77y.jpg" alt=""></a></p>
+<a id="more"></a>
+
 <h2 id="🚌电子排布"><a href="#🚌电子排布" class="headerlink" title="🚌电子排布"></a>🚌电子排布</h2><p>呃呃呃呃，我们都知道电子们并不是在同意轨道上运动的，而是在不同的轨道上的，那么，这些排布有什么规律吗</p>
 <h3 id="规律"><a href="#规律" class="headerlink" title="规律"></a>规律</h3><p>电子排布遵循这三个规律</p>
 <p>1.最内层最多排2个电子，最外层最多排8个电子</p>
@@ -232,6 +246,8 @@
     <url>/2020/03/07/%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>我也是费尽千辛万苦才完成这个blog的搭建啊，中间也踩过很多坑（还重装了个系统），那么本片博客会一步一步教你完成hexo的blog的搭建……同时，我也会带你们一起去跳坑哦！</p>
 <p>参考：<a href="https://blog.csdn.net/gdutxiaoxu/article/details/53576018" target="_blank" rel="noopener">https://blog.csdn.net/gdutxiaoxu/article/details/53576018</a></p>
+<a id="more"></a>
+
 <h2 id="搭建环境准备"><a href="#搭建环境准备" class="headerlink" title="搭建环境准备"></a>搭建环境准备</h2><p>差不多就这么点</p>
 <p>Node.js.的安装</p>
 <p>Git的安装</p>
